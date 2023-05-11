@@ -2,7 +2,7 @@ import User from "../models/User.js";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import {sendToken} from "../utils/features.js"
-import { errorMiddleware } from "../middlewares/error.js";
+import ErrorHandler, { errorMiddleware } from "../middlewares/error.js";
 
 export const register = async(req,res,next)=>{
 try {
