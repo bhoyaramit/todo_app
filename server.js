@@ -1,4 +1,4 @@
-import app from "./app.js";
+import { app } from "./app.js";
 import {ConnectDB} from "./data/db.js";
 ConnectDB();
 
